@@ -1,6 +1,6 @@
 ## Title: WritStylePrice
 ## Description: Display the price of each missing style for writ command
-## Version: 1.0.0-dev
+## Version: 1.0.0
 ## Author: bulton-fr
 ## APIVersion: 100032
 ## SavedVariables: WritStylePriceSavedVariables
