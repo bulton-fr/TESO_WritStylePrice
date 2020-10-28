@@ -29,7 +29,7 @@ ZO_CreateStringId("SI_WRITSTYLEPRICE_SETTINGS_SCAN_HOUSE_BANK", "Scan house stor
 ZO_CreateStringId("SI_WRITSTYLEPRICE_SETTINGS_PREFERRED_PRICE_TITLE", "Preferred price")
 ZO_CreateStringId(
     "SI_WRITSTYLEPRICE_SETTINGS_PREFERRED_PRICE_DESC",
-    "When retrieving the displayed price, several sources can be queried. here you can define in what order they will be."
+    "When retrieving the displayed price, several sources can be queried. Here you can define in what order they will be."
 )
 ZO_CreateStringId("SI_WRITSTYLEPRICE_SETTINGS_PREFERRED_PRICE_LIST_TTC", "Tamriel Trade Centre")
 ZO_CreateStringId("SI_WRITSTYLEPRICE_SETTINGS_PREFERRED_PRICE_LIST_MM", "Master Merchant")
