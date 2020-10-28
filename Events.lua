@@ -140,4 +140,8 @@ function WritStylePrice.Events.onMoveItem(eventCode, bagId, slotIdx, bNewItem, i
     end
 
     WritStylePrice.Collect:readItemSlot(bagId, slotIdx, bagItemList)
+
+    if WritStylePrice.GUI:getIsHidden() == false then
+        WritStylePrice.GUI:refreshList()
+    end
 end
