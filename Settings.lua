@@ -57,7 +57,7 @@ function WritStylePrice.Settings:buildScanCharBag()
         type    = "checkbox",
         name    = GetString(SI_WRITSTYLEPRICE_SETTINGS_SCAN_CHAR_BAG),
         getFunc = function()
-            return WritStylePrice.Collect:isScanCharBag()
+            return WritStylePrice.Collect:obtainScanCharBag()
         end,
         setFunc = function(value)
             WritStylePrice.Collect:defineScanCharBag(value)
@@ -75,7 +75,7 @@ function WritStylePrice.Settings:buildScanBank()
         type    = "checkbox",
         name    = GetString(SI_WRITSTYLEPRICE_SETTINGS_SCAN_BANK),
         getFunc = function()
-            return WritStylePrice.Collect:isScanBank()
+            return WritStylePrice.Collect:obtainScanBank()
         end,
         setFunc = function(value)
             WritStylePrice.Collect:defineScanBank(value)
@@ -93,7 +93,7 @@ function WritStylePrice.Settings:buildScanHouseBank()
         type    = "checkbox",
         name    = GetString(SI_WRITSTYLEPRICE_SETTINGS_SCAN_HOUSE_BANK),
         getFunc = function()
-            return WritStylePrice.Collect:isScanHouseBank()
+            return WritStylePrice.Collect:obtainScanHouseBank()
         end,
         setFunc = function(value)
             WritStylePrice.Collect:defineScanHouseBank(value)

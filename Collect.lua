@@ -124,7 +124,7 @@ end
 --
 -- @return bool
 --]]
-function WritStylePrice.Collect:isScanCharBag()
+function WritStylePrice.Collect:obtainScanCharBag()
     return self.savedVars.scan.charBag
 end
 
@@ -153,7 +153,7 @@ end
 --
 -- @return bool
 --]]
-function WritStylePrice.Collect:isScanBank()
+function WritStylePrice.Collect:obtainScanBank()
     return self.savedVars.scan.bank
 end
 
@@ -182,7 +182,7 @@ end
 --
 -- @return bool
 --]]
-function WritStylePrice.Collect:isScanHouseBank()
+function WritStylePrice.Collect:obtainScanHouseBank()
     return self.savedVars.scan.houseBank
 end
 
@@ -261,7 +261,7 @@ end
 -- Read all item in the character bag
 --]]
 function WritStylePrice.Collect:readCharBag()
-    if self:isScanCharBag() == false then
+    if self:obtainScanCharBag() == false then
         return nil
     end
 
@@ -280,7 +280,7 @@ end
 -- Read all item in the bank
 --]]
 function WritStylePrice.Collect:readBank()
-    if self:isScanBank() == false then
+    if self:obtainScanBank() == false then
         return nil
     end
 
@@ -303,7 +303,7 @@ function WritStylePrice.Collect:readHouseBanks()
         return nil
     end
 
-    if self:isScanHouseBank() == false then
+    if self:obtainScanHouseBank() == false then
         return nil
     end
 
