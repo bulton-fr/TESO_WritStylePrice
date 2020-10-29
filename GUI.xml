@@ -13,7 +13,6 @@
 
             <!-- React to window move/resize -->
             <OnMoveStop>WritStylePrice.Events.onGuiMoveStop()</OnMoveStop>
-            <OnResizeStop>WritStylePrice.Events.onGuiResizeStop()</OnResizeStop>
 
             <Controls>
                 <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" />

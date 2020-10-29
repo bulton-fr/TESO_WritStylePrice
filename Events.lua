@@ -83,14 +83,7 @@ end
 -- Called when the GUI o longer moved to save the current position
 --]]
 function WritStylePrice.Events.onGuiMoveStop()
-    WritStylePrice.GUI:savePositionAndSize()
-end
-
---[[
--- Called when the GUI o longer resized to save the current size
---]]
-function WritStylePrice.Events.onGuiResizeStop()
-    WritStylePrice.GUI:savePositionAndSize()
+    WritStylePrice.GUI:savePosition()
 end
 
 --[[

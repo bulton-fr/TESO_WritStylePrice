@@ -108,7 +108,7 @@ end
 --[[
 -- Save the current position and size of the UI
 --]]
-function WritStylePrice.GUI:savePositionAndSize()
+function WritStylePrice.GUI:savePosition()
     self.savedVars.position.top  = self.ui:GetTop()
     self.savedVars.position.left = self.ui:GetLeft()
 end
