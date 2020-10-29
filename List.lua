@@ -3,7 +3,7 @@ WritStylePrice.List = ZO_SortFilterList:Subclass()
 WritStylePrice.List.masterList = {}
 
 --[[
--- Instanciate a new ZO_SortFilterList witch use us and return it
+-- Instanciate a new ZO_SortFilterList which use us and return it
 --
 -- @return ZO_SortFilterList
 --]]

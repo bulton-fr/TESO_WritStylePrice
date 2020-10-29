@@ -93,7 +93,7 @@ function WritStylePrice.GUI:show()
 end
 
 --[[
--- Close the UI
+-- Hide the UI
 --]]
 function WritStylePrice.GUI:hide()
     if self.isHidden == true then
