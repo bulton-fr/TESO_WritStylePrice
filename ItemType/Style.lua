@@ -1,5 +1,5 @@
-WritStylePrice.ItemType.Styles = {}
-WritStylePrice.ItemType.Styles.__index = WritStylePrice.ItemType.Styles
+WritStylePrice.ItemType.Style = {}
+WritStylePrice.ItemType.Style.__index = WritStylePrice.ItemType.Style
 
 --[[
 -- Instanciate a new Style object
@@ -11,7 +11,7 @@ WritStylePrice.ItemType.Styles.__index = WritStylePrice.ItemType.Styles
 --
 -- return WritStylePrice.ItemType.Style
 --]]
-function WritStylePrice.ItemType.Styles:New(info, itemObj)
+function WritStylePrice.ItemType.Style:New(info, itemObj)
     if info == nil then
         info = {
             itemId  = nil,
@@ -52,7 +52,7 @@ end
 --[[
 -- Read the item and populate properties
 --]]
-function WritStylePrice.ItemType.Styles:readItem()
+function WritStylePrice.ItemType.Style:readItem()
     self.itemId = GetItemLinkItemId(self.itemLink)
 end
 
@@ -60,7 +60,7 @@ end
 -- Check if the style is known or not for the current character.
 -- Called only if not already known on another character.
 --]]
-function WritStylePrice.ItemType.Styles:checkStyleIsKnown()
+function WritStylePrice.ItemType.Style:checkStyleIsKnown()
     -- Extracted from UnknownInsight
     if self.itemType == WritStylePrice.Item.ITEM_TYPE_MO then
         self.isKnown = IsItemLinkBookKnown(self.itemLink)

@@ -50,7 +50,7 @@ function WritStylePrice.Item:initData()
     if self.itemType == self.ITEM_TYPE_MW then
         self.data = WritStylePrice.ItemType.MasterWrit:New(self.data, self)
     elseif self.itemType == self.ITEM_TYPE_MO or self.itemType == self.ITEM_TYPE_SP then
-        self.data = WritStylePrice.ItemType.Styles:New(self.data, self)
+        self.data = WritStylePrice.ItemType.Style:New(self.data, self)
     end
 end
 

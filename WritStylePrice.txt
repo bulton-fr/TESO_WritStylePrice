@@ -16,7 +16,7 @@ GUI.lua
 GUI.xml
 Item.lua
 ItemType\MasterWrit.lua
-ItemType\Styles.lua
+ItemType\Style.lua
 List.lua
 Price.lua
 Settings.lua
