@@ -234,6 +234,11 @@ function WritStylePrice.Collect:readAllList(callback, callbackSelf)
     end
 end
 
+--[[
+-- Remove all items in a specific bagType (not bagId !)
+--
+-- @param string bagType See WritStylePrice.Collect constants
+--]]
 function WritStylePrice.Collect:removeAllInBagType(bagType)
     if self.list[bagType] == nil then
         return
